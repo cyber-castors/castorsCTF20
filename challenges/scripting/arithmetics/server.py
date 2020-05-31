@@ -79,7 +79,7 @@ def challenge(req):
     for n in range(100):
         eq, ans = gen_chal(n)
 
-        t = Question_Timer(1)
+        t = Question_Timer(3)
         req.sendall(b"What is " + eq.encode() + b" ?\n")
         res = req.recv(1024).strip()
 

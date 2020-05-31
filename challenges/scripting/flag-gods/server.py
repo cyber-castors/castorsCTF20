@@ -61,7 +61,7 @@ def gen_chal(state):
 
 def challenge(req):
     start, end = 20, 100
-    t = Question_Timer(30)
+    t = Question_Timer(90)
     for state in range(start, end):
         target, corrupt, dist = gen_chal(state)
 

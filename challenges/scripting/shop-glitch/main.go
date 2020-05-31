@@ -184,7 +184,7 @@ func createSlice() []Items {
 	flag := Items{
 		name:        "Flag",
 		description: "Solve challenge",
-		price:       20000,
+		price:       5000,
 	}
 	vpn := Items{
 		name:        "VPN",

@@ -44,11 +44,17 @@ services:
       - "14426:8080"
     restart: unless-stopped
   
-  childbof:
-    build: ./challenges/pwn/childbof/
+  babybof2:
+    build: ./challenges/pwn/babybof2/
     ports:
       - "14434:8080"
     restart: unless-stopped
+    
+  # fmtme:
+  #   build: ./challenges/pwn/fmtme/bin/
+  #   ports:
+  #     - "14428:8080"
+  #   restart: unless-stopped
 
   # RE Challenges
   reverse-me:

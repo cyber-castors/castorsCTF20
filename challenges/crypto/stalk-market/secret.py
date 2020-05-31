@@ -1,0 +1,1 @@
+FLAG = b'castorsCTF{y0u_4r3_7h3_u1t1m4t3_turn1p_pr0ph37}'

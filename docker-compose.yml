@@ -1,0 +1,95 @@
+version: '3'
+services:
+  # Crypto Challenges
+  bagel-bytes:
+    build: ./challenges/crypto/bagel-bytes/
+    ports:
+      - "14420:8080"
+    restart: unless-stopped
+
+  magic-school-bus:
+    build: ./challenges/crypto/magic-school-bus/
+    ports:
+      - "14421:8080"
+    restart: unless-stopped
+
+  one-trick-pony:
+    build: ./challenges/crypto/one-trick-pony/
+    ports:
+      - "14422:8080"
+    restart: unless-stopped
+
+  stalk-market:
+    build: ./challenges/crypto/stalk-market/
+    ports:
+      - "14423:8080"
+    restart: unless-stopped
+
+  # Pwn Challenges
+  abcbof:
+    build: ./challenges/pwn/abcbof/bin/
+    ports:
+      - "14424:8080"
+    restart: unless-stopped
+    
+  babybof:
+    build: ./challenges/pwn/babybof/bin/
+    ports:
+      - "14425:8080"
+    restart: unless-stopped
+
+  babyfmt:
+    build: ./challenges/pwn/babyfmt/bin/
+    ports:
+      - "14426:8080"
+    restart: unless-stopped
+  
+  childbof:
+    build: ./challenges/pwn/childbof/
+    ports:
+      - "14434:8080"
+    restart: unless-stopped
+
+  # RE Challenges
+  reverse-me:
+    build: ./challenges/re/reverse-me/
+    ports:
+      - "14427:8080"
+    restart: unless-stopped
+
+  # Scripting Challenges
+  # able-sisters:
+  #   build: ./challenges/scripting/able-sisters/
+  #   ports:
+  #     - "14428:8080"
+  #   restart: unless-stopped
+
+  arithmetics:
+    build: ./challenges/scripting/arithmetics/
+    ports:
+      - "14429:8080"
+    restart: unless-stopped
+
+  base-runner:
+    build: ./challenges/scripting/base-runner/
+    ports:
+      - "14430:8080"
+    restart: unless-stopped
+
+  flag-gods:
+    build: ./challenges/scripting/flag-gods/
+    ports:
+      - "14431:8080"
+    restart: unless-stopped
+
+  shop-glitch:
+    build: ./challenges/scripting/shop-glitch/
+    ports:
+      - "14432:8080"
+    restart: always
+
+  # pwntools-101:
+  #   build: ./challenges/scripting/pwntools-101/
+  #   ports:
+  #     - "14433:8080"
+  #   restart: unless-stopped

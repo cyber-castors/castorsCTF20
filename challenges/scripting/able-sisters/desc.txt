@@ -1,0 +1,10 @@
+Receive order json.
+Generate new json (API) to send to Tom Nook
+
+The Able Sisters are releasing their online shopping App for the Nook Phone!
+Timmy and Tommy coded the mobile app and left it vulnerable to web injects
+Hackers are using this to modify the item prices and generate sha256 receipts
+with a fraudulent order total. This could pose unprecedented losses in Bells for 
+the Able Sisters.
+Your job is to detect if the sha256 receipt received from the API is well constructed
+and to Nook for shipping.

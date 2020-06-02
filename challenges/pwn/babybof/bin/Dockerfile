@@ -13,4 +13,5 @@ WORKDIR /data
 EXPOSE 8080
 
 # CMD ncat -k -e /data/babybof -l 8080
-CMD socat TCP-LISTEN:8080,reuseaddr,fork EXEC:./babybof,pty,stderr,setsid,sigint,sane
+#CMD socat TCP-LISTEN:8080,reuseaddr,fork EXEC:./babybof,pty,stderr,setsid,sigint,sane
+CMD socat TCP-LISTEN:8080,reuseaddr,fork EXEC:./babybof,pty,stderr,setsid,sigint,sane,raw,echo=0

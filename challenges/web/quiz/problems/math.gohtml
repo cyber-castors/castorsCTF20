@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <titile>Quiz Time!</titile>
+</head>
+<body>
+    <!-- if there is data show code-->
+    {{if .}}
+    <main>
+        <p><strong>Questions and User Input Fields</strong>:</p>
+        {{range .}}
+        <p>Problem #{{.Index}}: {{.Question}}</p> 
+        {{end}}
+        <form action="/problems/math" method="POST">
+            <input type="text" name="index" placeholder="Question Number">
+            <input type="text" name="var" placeholder="Answer">
+            <input type="submit" name="submit-btn" value="Submit">
+        </form>
+    </main>
+    {{end}}
+</body>
+</html>

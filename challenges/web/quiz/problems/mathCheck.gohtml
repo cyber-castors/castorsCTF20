@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Check Answers</title>
+</head>
+<body>
+    <!-- if there is data show code-->
+    {{if .}}
+    <main>
+        <p>Looks like that is {{.Header}}</p>
+        <p>{{.SorC}} Try again tho!</p>
+        <button type="button"><a href="/problems/math">Go again</a></button>
+    </main>
+    {{end}}
+</body>
+</html>

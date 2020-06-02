@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+    <h3>Hey, here are your shortcuts</h3>
+
+    <p><strong>Shortcuts</strong></p>
+    {{if .}}
+    {{range .}}
+        <a href="/shortcuts?alias={{.}}">{{.}}</a><br>
+    {{end}}
+    {{end}}
+
+    <button><a href="/upload">Upload Shortcut</a></button>
+</body>
+</html>
+<!-- This File should display all other available quizes-->

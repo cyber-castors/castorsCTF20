@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Too bad</title>
+          <style>
+         table, td, th {
+            border: 1px solid black;
+            width: 300px;
+         }
+      </style>
+</head>
+<body>
+    <h3>List of Cars available.</h3>
+     <table style="width:100%">
+  <tr>
+    <th>Type</th>
+    <th>Make</th>
+    <th>Model</th>
+    <th>Year</th>
+  </tr>
+  {{range .}}
+  <tr>
+    <td style="text-align:center">{{.Type}}</td>
+    <td style="text-align:center">{{.Make}}</td>
+    <td style="text-align:center">{{.Model}}</td>
+    <td style="text-align:center">{{.Year}}</td>
+  </tr>
+  {{end}}
+</table> 
+</body>
+</html>

@@ -1,0 +1,49 @@
+version: '3.8'
+services: 
+        db:
+                image: mariadb:10.4
+                restart: always
+                environment:
+                        MYSQL_ROOT_PASSWORD: passw0rd
+                networks:
+                        data:
+                command: [mysqld, --character-set-server=utf8mb4, --collation-server=utf8mb4_unicode_ci, --wait_timeout=28800, --log-warnings=0]
+
+        cookies:
+                build: ./cookies_n_databases/
+                ports:
+                - "14435:8080"
+                restart: always
+                depends_on:
+                        - db
+                networks:
+                        data:
+        quiz:
+                build: ./quiz/
+                ports:
+                - "14436:8080"
+                restart: always
+        shortcuts:
+                build: ./shortcuts/
+                ports:
+                - "14437:8080"    
+                restart: always  
+        php:
+                build: ./apache_log_poison/
+                restart: always
+                ports:
+                - "14438:80"
+        buttons:
+                build: ./xss/
+                restart: always
+                ports:
+                - "14439:8080"
+
+
+        
+                   
+
+networks:
+        data:
+                   
+

@@ -1,0 +1,3 @@
+This exercise has a .backup folder containing the source code. Once the user navigates to the folder the source code will be printed to the browesr. Having a simple understanding of Golang can be enough to obtain the flag. 
+
+In the source code there is a function the developer "forgot" to remove which tests a feature from Julien Schmidts httprouter. This feature allows the user to pass variables from the URL. In the source code this can be seen as mux.GET("/test/:home/:directory/:file") where each directory preceeded by a ":" is considered a variable. 

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Too bad</title>
+    <style>
+         /* Dropdown Button */
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;} 
+    </style>
+</head>
+<body>
+    <h3>Congrats!!</h3>
+    <p>You are our 3123213rd visitor!! Choose a car from the drop down below to see more details.</p>
+    <p>Whenever you decide which car you want go ahead and submit your request!</p>
+
+    <div class="dropdown">
+        <button class="dropbtn">Types of Cars</button>
+        <div class="dropdown-content">          
+                <form action="/search?id=1" method="POST">
+                    <input type="submit" name="car" value="Sport"/>    
+                </form>
+                <form action="/search?id=2" method="POST">
+                    <input type="submit" name="car" value="Sedan"/>    
+                </form>
+                <form action="/search?id=3" method="POST">
+                    <input type="submit" name="car" value="Minivan"/>    
+                </form>
+            </a>
+        </div>
+      </div> 
+</body>
+</html>

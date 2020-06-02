@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DMV</title>
+</head>
+<body>
+
+<h1>Welcome to the DMV.</h1>
+<p>You've succesfully passed the drivers license test (pretty easy right?).</p>
+<p>Unlike the actual DMV, we're pretty fast on our feet, here's your new ID.</p>
+
+
+{{if .Username}}
+FIRST {{.Firstname}}<br>
+LAST {{.Lastname}}<br>
+<h2><a href="/logout">log out</a></h2>
+{{end}}
+
+</body>
+</html>

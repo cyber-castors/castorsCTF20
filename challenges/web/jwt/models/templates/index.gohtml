@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+{{if .Username}}
+Hey there {{.Firstname}}<br>
+<p>Not much to do around here, except for waiting.</p>
+<h2>Get <a href="/dmv">drivers license</a></h2>
+
+{{else}}
+<a href="/logout">sign up</a>
+{{end}}
+
+<br>
+</body>
+</html>

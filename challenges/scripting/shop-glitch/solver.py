@@ -2,7 +2,7 @@ from pwn import *
 
 p = remote("3.21.54.89",14432)
 
-flag = 50100
+flag = 6100
 
 print(p.recvuntil('Choice: '))
 p.send(b"6\n")

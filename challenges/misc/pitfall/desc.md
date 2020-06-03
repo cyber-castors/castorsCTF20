@@ -1,0 +1,1 @@
+Use dig cybercastors.com txt to view the dns text records.

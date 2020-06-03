@@ -1,0 +1,1 @@
+Use character frequency analysis to retrieve the plaintext.

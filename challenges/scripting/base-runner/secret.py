@@ -1,1 +1,1 @@
-FLAG = b'castorsCTF[m4j0r_l34gu3_py7h0n_b4s3_runn3r}'
+FLAG = b'castorsCTF{m4j0r_l34gu3_py7h0n_b4s3_runn3r}'

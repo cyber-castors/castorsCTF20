@@ -3,7 +3,7 @@ from Crypto.Util.number import bytes_to_long, long_to_bytes
 from gmpy2 import isqrt, invert
 
 flag = b'castorsCTF{n0th1ng_l1k3_pr1m3_numb3r5_t0_w4rm_up_7h3_3ng1n3s}'
-
+print(int.from_bytes(flag, 'big'))
 with open('rsa.key','r') as f:
     data = f.read()
 
